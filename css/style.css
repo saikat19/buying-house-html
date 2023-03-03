@@ -5,16 +5,16 @@
     Template URI: 
     Description: This is html5 template
     Author: Saikat Ahmed
-    Author URI: http://saikatahmed.com/
+    Author URI: 
     Version: 1.0
 
 -----------------------------------------------------------------------------------
 
     CSS INDEX
     ===================
-  
+
     Theme default CSS
-    
+
 -----------------------------------------------------------------------------------*/
 /*google-font*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800");
@@ -60,14 +60,10 @@ div#preloader {
 }
 
 header.navbar-fixed-top {
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-name: fadeInDown;
-          animation-name: fadeInDown;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
-          box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
+  animation-duration: 0.8s;
+  animation-name: fadeInDown;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
   left: 0;
   padding-top: 20px;
   position: fixed;
@@ -128,7 +124,6 @@ header.navbar-fixed-top {
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -280,7 +275,7 @@ blockquote {
 
 blockquote::before {
   color: #4e5665;
-  content: "";
+  content: "\f10d";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 36px;
@@ -307,7 +302,7 @@ blockquote cite {
 }
 
 blockquote cite:before {
-  content: "\2014 \0020";
+  content: "— ";
 }
 
 blockquote cite a,
@@ -322,7 +317,7 @@ abbr {
   font-weight: 700;
   font-variant: small-caps;
   text-transform: lowercase;
-  letter-spacing: .6px;
+  letter-spacing: 0.6px;
 }
 
 abbr:hover {
@@ -439,6 +434,12 @@ dd {
 --------------------------
 */
 /* Your Custom Typography. */
+.custom-container {
+  max-width: 1650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .bg-with-black {
   position: relative;
 }
@@ -488,7 +489,11 @@ dd {
 }
 
 .hvr-bs:hover {
-  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/*# sourceMappingURL=style.css.map */
+
+/* 
+--------------------------
+- Home
+--------------------------
+*//*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@
     Template URI: 
     Description: This is html5 template
     Author: Saikat Ahmed
-    Author URI: http://saikatahmed.com/
+    Author URI: 
     Version: 1.0
 
 -----------------------------------------------------------------------------------
@@ -395,6 +395,11 @@ button {}
 
 /* Your Custom Typography. */
 
+.custom-container {
+   max-width: 1650px;
+   margin-left: auto;
+   margin-right: auto; 
+}
 .bg-with-black {
     position: relative;
 }
@@ -441,3 +446,10 @@ button {}
     -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* 
+--------------------------
+- Home
+--------------------------
+*/
+
