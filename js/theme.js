@@ -43,13 +43,13 @@
     /*-----------------
     sticky
     -----------------*/
-    $(window).on('scroll', function() {
-        if ($(window).scrollTop() > 85) {
-            $('header').addClass('navbar-fixed-top');
-        } else {
-            $('header').removeClass('navbar-fixed-top');
-        }
-    });
+    // $(window).on('scroll', function() {
+    //     if ($(window).scrollTop() > 85) {
+    //         $('header').addClass('navbar-fixed-top');
+    //     } else {
+    //         $('header').removeClass('navbar-fixed-top');
+    //     }
+    // });
 
     /*-----------------
     scroll-up
@@ -92,24 +92,13 @@
     /*---------------------
     slick carousel
     --------------------- */
-    $('.slick-carousel').slick({
+    $('.hero-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
         slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: true,
-        nextArrow: '<i class="slick-next zmdi zmdi-long-arrow-right"></i>',
-        prevArrow: '<i class="slick-prev zmdi zmdi-long-arrow-left"></i>',
-        fade: false,
-        asNavFor: '.slick-nav'
-    });
-    $('.slick-nav').slick({
-        slidesToShow: 9,
-        slidesToScroll: 1,
-        asNavFor: '.slick-carousel',
-        dots: false,
-        arrows: false,
-        centerMode: true,
-        focusOnSelect: true
-    });
+        adaptiveHeight: true
+      });
 
 
 }(jQuery));
