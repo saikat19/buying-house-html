@@ -17,7 +17,7 @@
 
 -----------------------------------------------------------------------------------*/
 /*google-font*/
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 /*----------------------------------------*/
 /*  Other Files
 /*----------------------------------------*/
@@ -158,7 +158,7 @@ Table Of Contents
 --------------------------
 */
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -168,7 +168,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #000000;
   letter-spacing: 0;
@@ -181,7 +181,7 @@ h4 a,
 h5 a,
 h6 a {
   font-weight: inherit;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -219,7 +219,7 @@ h6 {
 }
 
 p {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 0;
@@ -232,7 +232,7 @@ p img {
 }
 
 span {
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* em and strong */
@@ -253,7 +253,7 @@ small {
 /*  blockquotes */
 blockquote {
   border-left: 0 none;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 10px 0;
   padding-left: 40px;
   position: relative;
@@ -314,7 +314,7 @@ abbr:hover {
 a,
 a:visited {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-size: 12px;
   color: #000000;
@@ -491,6 +491,7 @@ dd {
   -moz-transition: 0.3;
   -o-transition: 0.3;
   padding: 14px 26px;
+  letter-spacing: 0;
 }
 .btn-style-1::after {
   content: "";
@@ -526,14 +527,172 @@ dd {
 */
 header {
   position: absolute;
+  z-index: 90;
   top: 0;
   left: 0;
   width: 100%;
 }
 
+.header-top-area {
+  background: #3246b4;
+}
+.header-top-area .header-top-info {
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 20px 0 0;
+  padding: 25px 0;
+  color: #ffffff;
+}
+.header-top-area .header-top-info span {
+  background: #ffffff;
+  color: #3246b4;
+  border-radius: 100px;
+  height: 30px;
+  width: 30px;
+  margin-right: 6px;
+}
+.header-top-area .header-top-info a {
+  color: #ffffff;
+}
+.header-top-area .social-links {
+  margin: 0 30px 0 0;
+  padding: 20px 0;
+}
+.header-top-area .social-links li {
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+.header-top-area .social-links li a {
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  background: #ffffff;
+  color: #3246b4;
+  font-size: 18px;
+  line-height: 22px;
+}
+.header-top-area .header-search {
+  position: relative;
+  padding: 15px 0;
+}
+.header-top-area .header-search input {
+  border-radius: 100px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 0 38px 0 18px;
+  border: 0;
+  height: 50px;
+  width: 250px;
+  letter-spacing: 0;
+}
+.header-top-area .header-search button {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  color: #000000;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+.header-bottom-area {
+  background: rgba(0, 0, 0, 0.1);
+}
+.header-bottom-area .logo {
+  padding: 10px 0;
+}
+.header-bottom-area .logo a {
+  display: inline-block;
+}
+.header-bottom-area .logo a img {
+  height: 100px;
+}
+.header-bottom-area .stellarnav.light {
+  background: transparent;
+  text-align: right;
+  padding: 39px 0;
+}
+.header-bottom-area .stellarnav.light ul {
+  background: transparent;
+  text-align: right;
+}
+.header-bottom-area .stellarnav.light ul li a {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 500;
+  padding: 10px 12px;
+}
+.header-bottom-area .stellarnav.light ul li a:hover {
+  text-decoration: underline;
+  color: #3246b4;
+}
+.header-bottom-area .stellarnav.light ul li:last-child a {
+  padding-right: 0;
+}
+.header-bottom-area .stellarnav.light ul li ul {
+  text-align: left;
+  background: #ffffff;
+}
+.header-bottom-area .stellarnav.light ul li ul li a {
+  text-transform: capitalize;
+}
+
+.hero-carousel .slick-dots {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  bottom: 140px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.hero-carousel .slick-dots li {
+  display: flex;
+  margin: 0 6px;
+}
+.hero-carousel .slick-dots li button {
+  padding: 0;
+  height: 18px;
+  width: 18px;
+  border: 1px solid #2f3a5f;
+  background: transparent;
+  border-radius: 100px;
+  color: transparent;
+}
+.hero-carousel .slick-dots li.slick-active button {
+  border-color: #3246b4;
+  background: #3246b4;
+}
+
 .single-carousel {
-  background-image: url(../images/home/banner-bg.jpg);
+  background-image: url(../images/home/hero-banner-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right center;
+  padding: 466px 0 226px 0;
+}
+.single-carousel .carousel-content .title {
+  font-size: 52px;
+  line-height: 56px;
+  margin: 0 0 42px;
+}
+.single-carousel .carousel-content .text {
+  font-size: 22px;
+  line-height: 32px;
+  margin: 0 0 74px;
 }/*# sourceMappingURL=style.css.map */

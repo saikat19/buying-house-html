@@ -93,6 +93,8 @@
     slick carousel
     --------------------- */
     $('.hero-carousel').slick({
+        autoplay: true,
+        arrows: false,
         dots: true,
         infinite: true,
         speed: 300,
