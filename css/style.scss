@@ -489,6 +489,39 @@ button {}
 --------------------------
 */
 
+.section-title {
+    margin: 0 0 30px;
+    h2 {
+        color: $hover-color;
+        text-decoration: underline;
+        text-decoration-color: $hover-color-2;
+        -moz-text-decoration-color: $hover-color-2;
+        text-decoration-thickness: 3px;
+        font-size: 44px;
+        line-height: 48px;
+        margin-bottom: 18px;
+        span {
+            color: $hover-color-2;
+            position: relative;
+            display: inline-block;
+            &::after {
+                content: "";
+                position: absolute;
+                left: -1px;
+                right: 0;
+                bottom: 3px;
+                height: 3px;
+                width: calc(100% - -1px);
+                background: $hover-color;
+            }
+        }
+    }
+    p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
 header {
     position: absolute;
     z-index: 90;
@@ -670,4 +703,8 @@ header {
         }
         .btn-style-1 {}
     }
+}
+
+.what-we-do-area {
+    padding: 100px 0 70px;
 }
