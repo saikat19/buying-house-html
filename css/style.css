@@ -60,11 +60,11 @@ div#preloader {
 }
 
 .mb-50 {
-  margin-bottom: 50px;
+  margin-bottom: 50px !important;
 }
 
 .mb-40 {
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 
 .mb-35 {
@@ -794,4 +794,93 @@ header {
 .what-we-do-single:hover {
   border-color: #3246b4;
   box-shadow: 0px 0px 15px 0px rgb(186, 186, 186);
+}
+
+.why-choose-area {
+  padding: 100px 0 70px;
+}
+
+.why-choose-content .accordion {
+  background: #f4f5f9;
+  padding: 60px 25px 20px;
+}
+.why-choose-content .accordion .accordion-item {
+  border: none;
+  margin: 0 0 40px;
+}
+.why-choose-content .accordion .accordion-item .accordion-header .accordion-button {
+  outline: none;
+  border-radius: 10px;
+  background: #ffffff;
+  background: transparent;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 14px 28px;
+  box-shadow: none;
+  letter-spacing: 0;
+  color: #3246b4;
+}
+.why-choose-content .accordion .accordion-item .accordion-header .accordion-button::after {
+  content: "-";
+  background: transparent;
+  transition: 0.3s;
+  transform: none;
+  height: 14px;
+  width: 14px;
+  margin-top: -14px;
+  font-weight: 700;
+}
+.why-choose-content .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  color: #2f3a5f;
+}
+.why-choose-content .accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+  content: "+";
+}
+.why-choose-content .accordion .accordion-item .accordion-collapse .accordion-body {
+  padding: 10px 28px;
+}
+.why-choose-content .accordion .accordion-item .accordion-collapse .accordion-body p {
+  font-size: 16px;
+  line-height: 28px;
+}
+.our-specialities-area {
+  background: #f4f5f9;
+  padding: 100px 0 70px;
+}
+
+.our-specialities-single {
+  border: 1px solid transparent;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  padding: 30px 20px;
+  margin: 0 0 30px;
+  min-height: 344px;
+}
+.our-specialities-single::after {
+  z-index: 3;
+}
+.our-specialities-single .icon {
+  margin: 0 0 30px;
+}
+.our-specialities-single .icon img {
+  height: 118px;
+}
+.our-specialities-single .content h4 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0 0 22px;
+}
+.our-specialities-single .content p {
+  font-size: 16px;
+  line-height: 28px;
+}
+.our-specialities-single:hover {
+  border-color: #3246b4;
+}
+
+.our-showcase-area {
+  padding: 100px 0;
 }/*# sourceMappingURL=style.css.map */

@@ -102,5 +102,36 @@
         adaptiveHeight: true
       });
 
+    /*---------------------
+    showcase carousel
+    --------------------- */
+    $('.showcase-carousel-1').slick({
+        autoplay: true,
+        arrows: false,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        adaptiveHeight: true
+      });
+    $('.showcase-carousel-2').slick({
+        autoplay: true,
+        arrows: false,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        adaptiveHeight: true
+      });
+    $('.showcase-carousel-3').slick({
+        autoplay: true,
+        arrows: false,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        adaptiveHeight: true
+      });
+
 
 }(jQuery));

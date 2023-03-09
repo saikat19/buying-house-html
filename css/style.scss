@@ -75,10 +75,10 @@ div#preloader {
 //     z-index: 99900;
 // }
 .mb-50 {
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
 }
 .mb-40 {
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
 }
 .mb-35 {
     margin-bottom: 35px;
@@ -765,5 +765,114 @@ header {
         -webkit-box-shadow: 0px 0px 15px 0px rgba(186,186,186,1);
         -moz-box-shadow: 0px 0px 15px 0px rgba(186,186,186,1);
         box-shadow: 0px 0px 15px 0px rgba(186,186,186,1);
+    }
+}
+
+.why-choose-area {
+    padding: 100px 0 70px;
+}
+.why-choose-banner {
+    img {}
+}
+.why-choose-content {
+    .accordion {
+        background: #f4f5f9;
+        padding: 60px 25px 20px;
+        .accordion-item {
+            border: none;
+            margin: 0 0 40px;
+            .accordion-header {
+                .accordion-button {
+                    outline: none;
+                    @include border-radius(10px);
+                    background: $light-color;
+                    background: transparent;
+                    font-size: 24px;
+                    line-height: 28px;
+                    padding: 14px 28px;
+                    box-shadow: none;
+                    letter-spacing: 0;
+                    color: $hover-color-2;
+                    &::after {
+                        content: "-";
+                        background: transparent;
+                        transition: 0.3s;
+                        transform: none;
+                        height: 14px;
+                        width: 14px;
+                        margin-top: -14px;
+                        font-weight: 700;
+                    }
+                    &.collapsed {
+                        color: $title-color;
+                        &::after {
+                            content: "+";
+                        }
+                    }
+                }
+            }
+            .accordion-collapse {
+                .accordion-body {
+                    padding: 10px 28px;
+                    p {
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+                }
+                &.show {}
+            }
+        }
+    }
+}
+
+.our-specialities-area {
+    background: #f4f5f9;
+    padding: 100px 0 70px;
+}
+.our-specialities-single {
+    border: 1px solid transparent;
+    @include transition(0.3s);
+    padding: 30px 20px;
+    margin: 0 0 30px;
+    min-height: 344px;
+    &::after {
+        z-index: 3;
+    }
+    .icon {
+        margin: 0 0 30px;
+        img {
+            height: 118px;
+        }
+    }
+    .content {
+        h4 {
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 500;
+            margin: 0 0 22px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 28px;
+        }
+    }
+    &:hover {
+        border-color: $hover-color-2;
+    }
+}
+
+.our-showcase-area {
+    padding: 100px 0;
+}
+.showcase-tab-nav {
+    .nav-item {
+        .nav-link {
+            &.active {}
+        }
+    }
+}
+.showcase-tab-content {
+    .tab-pane {
+        &.active {}
     }
 }
