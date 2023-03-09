@@ -520,6 +520,23 @@ dd {
   border-width: 24px;
 }
 
+.triangle-in-right {
+  position: relative;
+}
+.triangle-in-right::after {
+  content: "";
+  position: absolute;
+  transition: 0.3;
+  -webkit-transition: 0.3;
+  -moz-transition: 0.3;
+  -o-transition: 0.3;
+  right: 0;
+  bottom: -20px;
+  border-style: solid;
+  border-width: 20px;
+  border-color: transparent #3246b4 transparent transparent;
+}
+
 /* 
 --------------------------
 - Home
@@ -731,4 +748,50 @@ header {
 }
 .what-we-do-area {
   padding: 100px 0 70px;
+  position: relative;
+  z-index: 2;
+}
+.what-we-do-area::after {
+  content: "";
+  background: #f4f5f9;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  height: 364px;
+  width: 100%;
+}
+
+.what-we-do-single {
+  border: 1px solid transparent;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  padding: 30px 20px;
+  margin: 0 0 30px;
+  min-height: 428px;
+}
+.what-we-do-single::after {
+  z-index: 3;
+}
+.what-we-do-single .icon {
+  margin: 0 0 30px;
+}
+.what-we-do-single .icon img {
+  height: 118px;
+}
+.what-we-do-single .content h4 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  margin: 0 0 22px;
+}
+.what-we-do-single .content p {
+  font-size: 16px;
+  line-height: 28px;
+}
+.what-we-do-single:hover {
+  border-color: #3246b4;
+  box-shadow: 0px 0px 15px 0px rgb(186, 186, 186);
 }/*# sourceMappingURL=style.css.map */
