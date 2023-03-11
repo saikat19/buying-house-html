@@ -90,6 +90,16 @@
     });
 
     /*---------------------
+    progess
+    --------------------- */
+    $('.expertise-progess').waypoint(function() {
+        $('.progress-bar').addClass('left-anim');
+    }, {
+        triggerOnce: true,
+        offset: '50%'
+    });
+
+    /*---------------------
     slick carousel
     --------------------- */
     $('.hero-carousel').slick({
@@ -106,7 +116,7 @@
     showcase carousel
     --------------------- */
     $('.showcase-carousel-1').slick({
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         dots: true,
         infinite: true,
@@ -115,7 +125,7 @@
         adaptiveHeight: true
       });
     $('.showcase-carousel-2').slick({
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         dots: true,
         infinite: true,
@@ -124,7 +134,7 @@
         adaptiveHeight: true
       });
     $('.showcase-carousel-3').slick({
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         dots: true,
         infinite: true,
