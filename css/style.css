@@ -1263,4 +1263,41 @@ header {
   height: 95%;
   width: 660px;
   max-width: 100%;
+}
+
+.our-clients-area {
+  padding: 100px 0 70px;
+}
+
+.clients-carousel .single-carousel {
+  text-align: center;
+  margin: 0 15px 30px;
+  padding: 30px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.clients-carousel .single-carousel:hover {
+  background: #ffffff !important;
+  border-color: #3246b4;
+  box-shadow: 0px 0px 15px 0px rgb(186, 186, 186);
+}
+.clients-carousel .single-carousel img {
+  max-height: 170px;
+}
+
+.blog-area {
+  padding: 100px 0 70px;
+}
+
+.single-blog-post .img a {
+  display: block;
+}
+.single-blog-post .img a img {
+  width: 100%;
+}
+.single-blog-post .content .title a {
+  display: inline-block;
 }/*# sourceMappingURL=style.css.map */

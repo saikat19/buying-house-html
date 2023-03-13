@@ -100,6 +100,9 @@
     });
 
 
+    /*---------------------
+    video popup
+    --------------------- */
     $(document).ready(function() {
     // Gets the video src from the data-src on each button
     var $videoSrc;  
@@ -138,7 +141,7 @@
     showcase carousel
     --------------------- */
     $('.showcase-carousel-1').slick({
-        autoplay: false,
+        autoplay: true,
         arrows: false,
         dots: true,
         infinite: true,
@@ -147,7 +150,7 @@
         adaptiveHeight: true
       });
     $('.showcase-carousel-2').slick({
-        autoplay: false,
+        autoplay: true,
         arrows: false,
         dots: true,
         infinite: true,
@@ -156,7 +159,7 @@
         adaptiveHeight: true
       });
     $('.showcase-carousel-3').slick({
-        autoplay: false,
+        autoplay: true,
         arrows: false,
         dots: true,
         infinite: true,
@@ -177,6 +180,19 @@
           slidesToShow: 1,
           adaptiveHeight: true
         });
+      
+      /*---------------------
+      clients carousel
+      --------------------- */
+      $('.clients-carousel').slick({
+        autoplay: false,
+        arrows: false,
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        adaptiveHeight: true
+      });
 
 
 }(jQuery));
