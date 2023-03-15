@@ -1392,4 +1392,120 @@ header {
 }
 .connected-content .get-connected-links li {
   margin: 0 20px;
+}
+
+footer {
+  background-image: url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 100px 0 0;
+}
+
+.footer-top-area {
+  padding: 0 0 30px;
+  border-bottom: 1px solid #7a7a7a;
+}
+
+.footer-widget {
+  margin: 0 0 30px;
+}
+.footer-widget .widget-title {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+  border-bottom: 1px solid #c8252c;
+  padding: 0 0 12px;
+  margin: 0 0 40px;
+}
+.footer-widget .footer-logo {
+  margin: 0 0 30px;
+}
+.footer-widget .footer-logo img {
+  height: 200px;
+}
+.footer-widget p {
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  margin: 0 0 24px;
+}
+.footer-widget h5 {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+}
+.footer-widget .links {
+  padding: 0;
+  list-style: none;
+}
+.footer-widget .links li {
+  display: block;
+  margin: 0 0 14px;
+  letter-spacing: 0;
+}
+.footer-widget .links li a {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0;
+}
+.footer-widget .links li a::before {
+  color: #c8252c;
+  content: "\f0c5";
+  font-family: "Font Awesome 5 Free";
+  margin-right: 8px;
+}
+.footer-widget .address-list {
+  padding: 0;
+  list-style: none;
+}
+.footer-widget .address-list li {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  display: block;
+  margin: 0 0 14px;
+  display: flex;
+  letter-spacing: 0;
+}
+.footer-widget .address-list li span {
+  color: #c8252c;
+  margin-right: 8px;
+}
+.footer-widget .socials {
+  padding: 0;
+  list-style: none;
+}
+.footer-widget .socials li {
+  margin-right: 10px;
+  letter-spacing: 0;
+}
+.footer-widget .socials li a {
+  color: #ffffff;
+  font-size: 18px;
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  border: 1px solid #c8252c;
+  letter-spacing: 0;
+}
+.footer-widget .socials li a:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.footer-bottom-area .footer-bottom-left {
+  padding: 64px 0;
+}
+.footer-bottom-area .footer-bottom-left p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+}
+.footer-bottom-area .footer-bottom-right {
+  padding: 54px 0;
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */

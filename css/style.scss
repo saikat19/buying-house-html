@@ -1384,3 +1384,118 @@ header {
         }
     }
 }
+
+footer {
+    background-image: url(../images/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $light-color;
+    padding: 100px 0 0;
+}
+.footer-top-area {
+    padding: 0 0 30px;
+    border-bottom: 1px solid $paragraph-color;
+}
+.footer-widget {
+    margin: 0 0 30px;
+    .widget-title {
+        color: $light-color;
+        font-size: 22px;
+        line-height: 26px;
+        border-bottom: 1px solid $hover-color;
+        padding: 0 0 12px;
+        margin: 0 0 40px;
+    }
+    .footer-logo {
+        margin: 0 0 30px;
+        img {
+            height: 200px;
+        }
+    }
+    p {
+        font-size: 18px;
+        line-height: 32px;
+        color: $light-color;
+        margin: 0 0 24px;
+    }
+    h5 {
+        color: $light-color;
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .links {
+        padding: 0;
+        list-style: none;
+        li {
+            display: block;
+            margin: 0 0 14px;
+            letter-spacing: 0;
+            a {
+                color: $light-color;
+                display: inline-block;
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: 0;
+                &::before {
+                    color: $hover-color;
+                    content: "\f0c5";
+                    font-family: "Font Awesome 5 Free";
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .address-list {
+        padding: 0;
+        list-style: none;
+        li {
+            color: $light-color;
+            font-size: 18px;
+            line-height: 22px;
+            display: block;
+            margin: 0 0 14px;
+            display: flex;
+            letter-spacing: 0;
+            span {
+                color: $hover-color;
+                margin-right: 8px;
+            }
+        }
+    }
+    .socials {
+        padding: 0;
+        list-style: none;
+        li {
+            margin-right: 10px;
+            letter-spacing: 0;
+            a {
+                color: $light-color;
+                font-size: 18px;
+                display: inline-block;
+                height: 32px;
+                width: 32px;
+                border: 1px solid $hover-color;
+                letter-spacing: 0;
+                &:hover {
+                    background: $light-color;
+                    color: $dark-color;
+                }
+            }
+        }
+    }
+}
+.footer-bottom-area {
+    .footer-bottom-left {
+        padding: 64px 0;
+        p {
+            color: $light-color;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    .footer-bottom-right {
+        padding: 54px 0;
+        text-align: right;
+    }
+}
