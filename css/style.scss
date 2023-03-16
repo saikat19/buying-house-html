@@ -399,14 +399,18 @@ button {}
 /* Your Custom Typography. */
 
 .custom-container {
-   max-width: 1650px;
+   max-width: 1680px;
    margin-left: auto;
-   margin-right: auto; 
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
 }
 .custom-container-2 {
-   max-width: 1725px;
+   max-width: 1755px;
    margin-left: auto;
-   margin-right: auto; 
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
 }
 .bg-with-black {
     position: relative;
@@ -581,6 +585,10 @@ button {}
         font-size: 44px;
         line-height: 48px;
         margin-bottom: 18px;
+        @media screen and (max-width: 767px) {
+            font-size: 34px;
+            line-height: 38px;
+        }
         span {
             color: $hover-color-2;
             position: relative;
@@ -594,12 +602,19 @@ button {}
                 height: 3px;
                 width: calc(100% - -1px);
                 background: $hover-color;
+                @media screen and (max-width: 767px) {
+                    bottom: 2px;
+                }
             }
         }
     }
     p {
         font-size: 22px;
         line-height: 32px;
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+            line-height: 28px;
+        }
     }
 }
 
@@ -688,6 +703,9 @@ header {
             display: inline-block;
             img {
                 height: 100px;
+                @media screen and (max-width: 991px) {
+                    height: 70px;
+                }
             }
         }
     }
@@ -695,6 +713,9 @@ header {
         background: transparent;
         text-align: right;
         padding: 39px 0;
+        @media screen and (max-width: 991px) {
+            padding: 20px 0;
+        }
         ul {
             background: transparent;
             text-align: right;
@@ -723,8 +744,18 @@ header {
                     li {
                         a {
                             text-transform: capitalize;
+                            text-decoration: none;
                         }
                     }
+                }
+            }
+        }
+        &.mobile {
+            ul {
+                background: $light-color;
+                z-index: 9091;
+                li {
+                    text-align: left;
                 }
             }
         }
@@ -739,11 +770,24 @@ header {
         background-repeat: no-repeat;
         background-position: right center;
         padding: 466px 0 226px 0;
+        @media screen and (max-width: 1500px) {
+            background-position: 0 0;
+        }
+        @media screen and (max-width: 1200px) {
+            background-position: 30% 0;
+        }
+        @media screen and (max-width: 1024px) {
+            padding: 350px 0 150px 0;
+        }
         .carousel-content {
             .title {
                 font-size: 52px;
                 line-height: 56px;
                 margin: 0 0 42px;
+                @media screen and (max-width: 1024px) {
+                    font-size: 40px;
+                    line-height: 44px;
+                }
             }
             .text {
                 font-size: 22px;
@@ -764,6 +808,9 @@ header {
         -moz-transform:translateX(-50%);
         -ms-transform:translateX(-50%);
         -o-transform:translateX(-50%);
+        @media screen and (max-width: 1024px) {
+            bottom: 40px;
+        }
         li {
             display: flex;
             margin: 0 6px;
@@ -840,9 +887,11 @@ header {
     padding: 100px 0 70px;
 }
 .why-choose-banner {
+    margin: 0 0 30px;
     img {}
 }
 .why-choose-content {
+    margin: 0 0 30px;
     .accordion {
         background: $bg-color-light-1;
         padding: 60px 25px 20px;

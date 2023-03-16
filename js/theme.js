@@ -34,7 +34,7 @@
     --------------------- */
     jQuery('.stellarnav').stellarNav({
         theme: 'light',
-        breakpoint: 960,
+        breakpoint: 991,
         position: 'right',
         phoneBtn: '18009997788',
         locationBtn: 'https://www.google.com/maps'
@@ -128,7 +128,7 @@
     hero carousel
     --------------------- */
     $('.hero-carousel').slick({
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         dots: true,
         infinite: true,
@@ -141,38 +141,116 @@
     showcase carousel
     --------------------- */
     $('.showcase-carousel-1').slick({
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         dots: true,
         infinite: true,
         speed: 300,
         slidesToShow: 4,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+              }
+            },
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 650,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
       });
     $('.showcase-carousel-2').slick({
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         dots: true,
         infinite: true,
         speed: 300,
         slidesToShow: 4,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+              }
+            },
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 650,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
       });
     $('.showcase-carousel-3').slick({
-        autoplay: true,
+        autoplay: false,
         arrows: false,
         dots: true,
         infinite: true,
         speed: 300,
         slidesToShow: 4,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+              }
+            },
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 650,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
       });
       
       /*---------------------
       testimonial carousel
       --------------------- */
       $('.testimonial-carousel').slick({
-          autoplay: true,
+          autoplay: false,
           arrows: false,
           dots: true,
           infinite: true,
