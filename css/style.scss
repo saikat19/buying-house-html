@@ -895,6 +895,9 @@ header {
     .accordion {
         background: $bg-color-light-1;
         padding: 60px 25px 20px;
+        @media screen and (max-width: 767px) {
+            padding: 30px 15px 20px;
+        }
         .accordion-item {
             border: none;
             margin: 0 0 40px;
@@ -910,6 +913,11 @@ header {
                     box-shadow: none;
                     letter-spacing: 0;
                     color: $hover-color-2;
+                    @media screen and (max-width: 767px) {
+                        font-size: 18px;
+                        line-height: 22px;
+                        padding: 10px 15px;
+                    }
                     &::after {
                         content: "-";
                         background: transparent;
@@ -1086,6 +1094,12 @@ header {
 }
 .our-expertise-content {
     padding: 60px;
+    @media screen and (max-width: 1024px) {
+        padding: 30px;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 15px;
+    }
 }
 .left-anim {
     animation: animate-positive 2s;
@@ -1167,6 +1181,13 @@ header {
 .testimonial-content {
     padding: 55px 45px;
     margin: 0 0 -155px;
+    @media screen and (max-width: 991px) {
+        margin: 0 0 30px;
+        padding: 20px 30px;
+    }
+    @media screen and (max-width: 767px) {
+        padding: 15px;
+    }
     .testimonial-content-title-1 {
         font-size: 38px;
         line-height: 42px;
@@ -1183,6 +1204,9 @@ header {
     .single-carousel {
         .author-info {
             margin: 0 0 44px;
+            @media screen and (max-width: 767px) {
+                flex-wrap: wrap;
+            }
             .img {
                 position: relative;
                 img {
@@ -1203,6 +1227,10 @@ header {
             }
             .info {
                 padding: 0 0 0 20px;
+                @media screen and (max-width: 767px) {
+                    width: 100%;
+                    padding: 20px 0 0;
+                }
                 .author-name {
                     font-size: 26px;
                     line-height: 30px;
@@ -1221,6 +1249,11 @@ header {
             font-size: 24px;
             line-height: 32px;
             font-weight: 500;
+            @media screen and (max-width: 767px) {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 400;
+            }
         }
     }
     .slick-dots {
@@ -1253,6 +1286,9 @@ header {
 
 .overview-area {
     padding: 270px 0 0;
+    @media screen and (max-width: 991px) {
+        padding: 100px 0 0;
+    }
 }
 .video-popup {
     .bg {
@@ -1368,6 +1404,7 @@ header {
                 bottom: 0;
                 height: 1px;
                 width: 355px;
+                max-width: 100%;
             }
         }
         .meta {
@@ -1383,6 +1420,11 @@ header {
             font-size: 22px;
             line-height: 42px;
             margin: 0 0 74px;
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+                line-height: 32px;
+                margin: 0 0 24px;
+            }
         }
     }
     &.small {
@@ -1404,7 +1446,7 @@ header {
 }
 
 .connected-area {
-    padding: 100px 0;
+    padding: 100px 0 80px;
     background-image: url(../images/home/connected-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -1415,21 +1457,38 @@ header {
         font-size: 46px;
         line-height: 50px;
         margin: 0 0 30px;
+        @media screen and (max-width: 767px) {
+            font-size: 36px;
+            line-height: 40px;
+        }
     }
     .title-2 {
         font-size: 26px;
         line-height: 30px;
         font-weight: 500;
         margin: 0 0 56px;
+        @media screen and (max-width: 767px) {
+            font-size: 22px;
+            line-height: 38px;
+            margin: 0 0 36px;
+        }
     }
     .get-connected {
         font-size: 40px;
         line-height: 44px;
         margin: 250px 0 60px;
+        @media screen and (max-width: 767px) {
+            margin: 150px 0 60px;
+        }
     }
     .get-connected-links {
+        padding: 0;
+        list-style: none;
+        flex-wrap: wrap;
         li {
-            margin: 0 20px;
+            margin: 0 20px 20px;
+            height: 50px;
+            width: 50px;
         }
     }
 }
@@ -1545,6 +1604,5 @@ footer {
     }
     .footer-bottom-right {
         padding: 54px 0;
-        text-align: right;
     }
 }
