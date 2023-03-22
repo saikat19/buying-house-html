@@ -432,7 +432,7 @@ dd {
 */
 /* Your Custom Typography. */
 .custom-container {
-  max-width: 1680px;
+  max-width: 1380px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -440,7 +440,7 @@ dd {
 }
 
 .custom-container-2 {
-  max-width: 1755px;
+  max-width: 1455px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -525,6 +525,10 @@ dd {
 
 .bg-light-6 {
   background: #f2f4fc;
+}
+
+.bg-light-dark-1 {
+  background: #e8e8e8;
 }
 
 .color-light {
@@ -653,13 +657,28 @@ dd {
 }
 .section-title h2 {
   color: #c8252c;
-  text-decoration: underline;
-  text-decoration-color: #3246b4;
-  -moz-text-decoration-color: #3246b4;
-  text-decoration-thickness: 3px;
+  text-decoration: none;
   font-size: 44px;
   line-height: 48px;
   margin-bottom: 18px;
+  display: inline-block;
+  position: relative;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: -1px;
+  right: 0;
+  bottom: -8px;
+  height: 3px;
+  width: calc(100% + 1px);
+  background: #3246b4;
+}
+@media screen and (max-width: 767px) {
+  .section-title h2::after {
+    bottom: 2px;
+  }
 }
 @media screen and (max-width: 767px) {
   .section-title h2 {
@@ -675,9 +694,10 @@ dd {
 .section-title h2 span::after {
   content: "";
   position: absolute;
+  z-index: 3;
   left: -1px;
   right: 0;
-  bottom: 3px;
+  bottom: -8px;
   height: 3px;
   width: calc(100% + 1px);
   background: #c8252c;
@@ -1842,6 +1862,15 @@ footer {
 */
 .latest-blog-area {
   padding: 100px 0 70px;
+}
+
+.related-posts-wrap .rpw-title {
+  width: 1090px;
+  max-width: 100%;
+  font-size: 26px;
+  line-height: 30px;
+  padding: 10px 10px;
+  margin: 0 0 30px;
 }
 
 .blog-sidebar {

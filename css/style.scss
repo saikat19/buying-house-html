@@ -405,14 +405,14 @@ button {}
 /* Your Custom Typography. */
 
 .custom-container {
-   max-width: 1680px;
+   max-width: 1380px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 15px;
    padding-right: 15px;
 }
 .custom-container-2 {
-   max-width: 1755px;
+   max-width: 1455px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 15px;
@@ -484,6 +484,9 @@ button {}
 }
 .bg-light-6 {
     background: $bg-color-light-6;
+}
+.bg-light-dark-1 {
+    background: $bg-color-light-dark-1;
 }
 .color-light {
     color: $light-color;
@@ -596,13 +599,29 @@ button {}
     margin: 0 0 30px;
     h2 {
         color: $hover-color;
-        text-decoration: underline;
-        text-decoration-color: $hover-color-2;
-        -moz-text-decoration-color: $hover-color-2;
-        text-decoration-thickness: 3px;
+        text-decoration: none;
+        // text-decoration-color: $hover-color-2;
+        // -moz-text-decoration-color: $hover-color-2;
+        // text-decoration-thickness: 3px;
         font-size: 44px;
         line-height: 48px;
         margin-bottom: 18px;
+        display: inline-block;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 2;
+            left: -1px;
+            right: 0;
+            bottom: -8px;
+            height: 3px;
+            width: calc(100% - -1px);
+            background: $hover-color-2;
+            @media screen and (max-width: 767px) {
+                bottom: 2px;
+            }
+        }
         @media screen and (max-width: 767px) {
             font-size: 34px;
             line-height: 38px;
@@ -614,9 +633,10 @@ button {}
             &::after {
                 content: "";
                 position: absolute;
+                z-index: 3;
                 left: -1px;
                 right: 0;
-                bottom: 3px;
+                bottom: -8px;
                 height: 3px;
                 width: calc(100% - -1px);
                 background: $hover-color;
@@ -1763,6 +1783,16 @@ footer {
 
 .latest-blog-area {
     padding: 100px 0 70px;
+}
+.related-posts-wrap {
+    .rpw-title {
+        width: 1090px;
+        max-width: 100%;
+        font-size: 26px;
+        line-height: 30px;
+        padding: 10px 10px;
+        margin: 0 0 30px;
+    }
 }
 .blog-sidebar {
     margin: 0 0 30px;
