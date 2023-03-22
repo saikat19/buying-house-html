@@ -1833,9 +1833,15 @@ footer {
     border: 1px solid $border-color-1;
     margin: 0 0 20px;
     .img {
+        min-width: 160px;
         width: 160px;
+        @media screen and (max-width: 991px) {
+            min-width: 120px;
+            width: 120px;
+        }
         @media screen and (max-width: 575px) {
-            width: 100px;
+            min-width: 90px;
+            width: 90px;
         }
         img {
             height: 120px;

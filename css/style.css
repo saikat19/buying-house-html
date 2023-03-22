@@ -1914,11 +1914,19 @@ footer {
   margin: 0 0 20px;
 }
 .recent-post-box .img {
+  min-width: 160px;
   width: 160px;
+}
+@media screen and (max-width: 991px) {
+  .recent-post-box .img {
+    min-width: 120px;
+    width: 120px;
+  }
 }
 @media screen and (max-width: 575px) {
   .recent-post-box .img {
-    width: 100px;
+    min-width: 90px;
+    width: 90px;
   }
 }
 .recent-post-box .img img {
