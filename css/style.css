@@ -59,6 +59,20 @@ div#preloader {
   z-index: 999;
 }
 
+.header-bottom-area.navbar-fixed-top {
+  animation-duration: 0.8s;
+  animation-name: fadeInDown;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  z-index: 99900;
+}
+
 .mb-50 {
   margin-bottom: 50px !important;
 }
@@ -866,6 +880,12 @@ header {
 .header-bottom-area .stellarnav.light.mobile ul li {
   text-align: left;
 }
+.header-bottom-area.navbar-fixed-top .logo a img {
+  height: 50px;
+}
+.header-bottom-area.navbar-fixed-top .stellarnav.light {
+  padding: 14px 0;
+}
 
 .hero-carousel .single-carousel {
   background-image: url(../images/home/hero-banner-1.jpg);
@@ -873,6 +893,7 @@ header {
   background-repeat: no-repeat;
   background-position: right center;
   padding: 466px 0 226px 0;
+  height: 1078px;
 }
 @media screen and (max-width: 1500px) {
   .hero-carousel .single-carousel {
@@ -1129,34 +1150,15 @@ header {
   color: #ffffff;
 }
 
-.showcase-carousel .slick-dots {
-  margin: 30px 0 0;
+.showcase-carousel {
   display: flex;
-  justify-content: center;
-  list-style: none;
-  width: 100%;
-}
-.showcase-carousel .slick-dots li {
-  display: flex;
-  margin: 0 6px;
-}
-.showcase-carousel .slick-dots li button {
-  padding: 0;
-  height: 18px;
-  width: 18px;
-  border: 1px solid #2f3a5f;
-  background: transparent;
-  border-radius: 100px;
-  color: transparent;
-}
-.showcase-carousel .slick-dots li.slick-active button {
-  border-color: #3246b4;
-  background: #3246b4;
+  flex-wrap: wrap;
 }
 
 .single-showcase-carousel {
   padding: 0 15px;
   margin: 0 0 30px;
+  min-width: 33.3333%;
 }
 .single-showcase-carousel .img {
   padding: 0 30px;

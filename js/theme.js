@@ -43,13 +43,13 @@
     /*-----------------
     sticky
     -----------------*/
-    // $(window).on('scroll', function() {
-    //     if ($(window).scrollTop() > 85) {
-    //         $('header').addClass('navbar-fixed-top');
-    //     } else {
-    //         $('header').removeClass('navbar-fixed-top');
-    //     }
-    // });
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() > 85) {
+            $('.header-bottom-area').addClass('navbar-fixed-top');
+        } else {
+            $('.header-bottom-area').removeClass('navbar-fixed-top');
+        }
+    });
 
     /*-----------------
     scroll-up
@@ -122,8 +122,48 @@
     }) 
     // document ready  
     });
+
+    /*---------------------
+    item drag
+    --------------------- */
+    // const slider = document.querySelector('.items');
+    // let isDown = false;
+    // let startX;
+    // let scrollLeft;
+
+    // slider.addEventListener('mousedown', (e) => {
+    //   isDown = true;
+    //   slider.classList.add('active');
+    //   startX = e.pageX - slider.offsetLeft;
+    //   scrollLeft = slider.scrollLeft;
+    // });
+    // slider.addEventListener('mouseleave', () => {
+    //   isDown = false;
+    //   slider.classList.remove('active');
+    // });
+    // slider.addEventListener('mouseup', () => {
+    //   isDown = false;
+    //   slider.classList.remove('active');
+    // });
+    // slider.addEventListener('mousemove', (e) => {
+    //   if(!isDown) return;
+    //   e.preventDefault();
+    //   const x = e.pageX - slider.offsetLeft;
+    //   const walk = (x - startX) * 3; //scroll-fast
+    //   slider.scrollLeft = scrollLeft - walk;
+    //   console.log(walk);
+    // });
                 
 
+    /*---------------------
+    fancybox
+    --------------------- */
+    $('[data-fancybox]').fancybox({
+      image: {
+          protect: true
+      }
+  });
+  
     /*---------------------
     hero carousel
     --------------------- */
@@ -140,111 +180,111 @@
     /*---------------------
     showcase carousel
     --------------------- */
-    $('.showcase-carousel-1').slick({
-        autoplay: false,
-        arrows: false,
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        adaptiveHeight: true,
-        responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-              }
-            },
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 650,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
-      });
-    $('.showcase-carousel-2').slick({
-        autoplay: false,
-        arrows: false,
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        adaptiveHeight: true,
-        responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-              }
-            },
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 650,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
-      });
-    $('.showcase-carousel-3').slick({
-        autoplay: false,
-        arrows: false,
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 4,
-        adaptiveHeight: true,
-        responsive: [
-            {
-              breakpoint: 1200,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-              }
-            },
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            },
-            {
-              breakpoint: 650,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
-      });
+    // $('.showcase-carousel-1').slick({
+    //     autoplay: false,
+    //     arrows: false,
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 300,
+    //     slidesToShow: 4,
+    //     adaptiveHeight: true,
+    //     responsive: [
+    //         {
+    //           breakpoint: 1200,
+    //           settings: {
+    //             slidesToShow: 3,
+    //             slidesToScroll: 3,
+    //           }
+    //         },
+    //         {
+    //           breakpoint: 991,
+    //           settings: {
+    //             slidesToShow: 2,
+    //             slidesToScroll: 2
+    //           }
+    //         },
+    //         {
+    //           breakpoint: 650,
+    //           settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1
+    //           }
+    //         }
+    //         // You can unslick at a given breakpoint now by adding:
+    //         // settings: "unslick"
+    //         // instead of a settings object
+    //       ]
+    //   });
+    // $('.showcase-carousel-2').slick({
+    //     autoplay: false,
+    //     arrows: false,
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 300,
+    //     slidesToShow: 4,
+    //     adaptiveHeight: true,
+    //     responsive: [
+    //         {
+    //           breakpoint: 1200,
+    //           settings: {
+    //             slidesToShow: 3,
+    //             slidesToScroll: 3,
+    //           }
+    //         },
+    //         {
+    //           breakpoint: 991,
+    //           settings: {
+    //             slidesToShow: 2,
+    //             slidesToScroll: 2
+    //           }
+    //         },
+    //         {
+    //           breakpoint: 650,
+    //           settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1
+    //           }
+    //         }
+    //         // You can unslick at a given breakpoint now by adding:
+    //         // settings: "unslick"
+    //         // instead of a settings object
+    //       ]
+    //   });
+    // $('.showcase-carousel-3').slick({
+    //     autoplay: false,
+    //     arrows: false,
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 300,
+    //     slidesToShow: 4,
+    //     adaptiveHeight: true,
+    //     responsive: [
+    //         {
+    //           breakpoint: 1200,
+    //           settings: {
+    //             slidesToShow: 3,
+    //             slidesToScroll: 3,
+    //           }
+    //         },
+    //         {
+    //           breakpoint: 991,
+    //           settings: {
+    //             slidesToShow: 2,
+    //             slidesToScroll: 2
+    //           }
+    //         },
+    //         {
+    //           breakpoint: 650,
+    //           settings: {
+    //             slidesToShow: 1,
+    //             slidesToScroll: 1
+    //           }
+    //         }
+    //         // You can unslick at a given breakpoint now by adding:
+    //         // settings: "unslick"
+    //         // instead of a settings object
+    //       ]
+    //   });
       
       /*---------------------
       testimonial carousel
